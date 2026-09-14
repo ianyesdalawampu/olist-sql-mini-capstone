@@ -8,7 +8,7 @@ with customer_spending as (
     select o.customer_id,
             sum(op.payment_value) as total_spent
     from orders o
-    inner join order_payments op
+    join order_payments op
         on o.order_id = op.order_id
     group by o.customer_id
     )
@@ -16,7 +16,7 @@ with customer_spending as (
 select c.customer_unique_id,
        cs.total_spent
 from customers c
-inner join customer_spending cs
+join customer_spending cs
     on c.customer_id = cs.customer_id
 order by total_spent desc
 limit 10;
