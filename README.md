@@ -31,7 +31,7 @@ This project answers eight business questions using SQL to analyze customer beha
 * Top 3 products within each category.
 * Customer spend segmentation.
 * Repeat buyers vs one-time buyers.
-* Revenue contribution by product category.
+* Revenue contribution by top product category.
 
 ## Repository Structure
 
